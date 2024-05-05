@@ -39,7 +39,8 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form role="form" class="text-start" method="GET" action="{{route('home')}}">
+                                <form role="form" class="text-start" method="POST" action="{{ route('login') }}">
+                                    @csrf
                                     <div class="input-group input-group-outline my-3">
                                         <label class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" required>

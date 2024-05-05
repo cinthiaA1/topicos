@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        Log::alert('Entro a la funcion HomeController');
+       
         $this->middleware('auth');
     }
 
@@ -26,7 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        Log::alert('Entro a la funcion que devuelve al home');
+        
         return view('home');
         
     }
